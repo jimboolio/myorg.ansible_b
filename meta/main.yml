@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: ansible_b
+  author: Me
+  namespace: myorg
+  description: Hello
+
+  license: none
+
+  min_ansible_version: 2.15.2
+
+  platforms:
+    - name: EL
+      versions:
+        - "9"
+
+  galaxy_tags: []
+
+dependencies:
+  - src: git+https://github.com/jimboolio/myorg.ansible_a.git
+    version: master
+    name: myorg.ansible_a
